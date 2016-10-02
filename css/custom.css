@@ -26,6 +26,9 @@ body>.navbar-transparent .navbar-nav>.open>a {
     min-height: 300px;
     border-bottom: none;
 }
+.navbar-default .navbar-nav > li > .external-link {
+    color: #8521ff;
+}
 .table-of-contents {
     margin-top: 1em;
 }

@@ -2,6 +2,7 @@
 
 ## Link
 http://www.kunzisoft.com/
+https://kunzisoft.blogspot.com/
 
 <img src="https://raw.githubusercontent.com/Kunzisoft/Kunzisoft-web/master/img/logo.png">
 
