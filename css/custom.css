@@ -12,6 +12,20 @@ body>.navbar {
 body>.navbar-transparent .navbar-nav>.open>a {
     background-color: transparent!important;
 }
+input[type=text] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 0 20px 0 20px;
+    box-sizing: border-box;
+}
+form .fa{
+    font-size: 30px;
+    padding-top: 10px;
+    color: #A95FEF;
+}
+.email-title {
+    color: #CDABFF;
+}
 }#home {
     padding-top: 0;
 }
@@ -27,7 +41,7 @@ body>.navbar-transparent .navbar-nav>.open>a {
     border-bottom: none;
 }
 .navbar-default .navbar-nav > li > .external-link {
-    color: #8521ff;
+    color: #661fa5;
 }
 .table-of-contents {
     margin-top: 1em;

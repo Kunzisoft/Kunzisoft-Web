@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="./css/custom.css">
     <!-- Latest compiled and minified JavaScript -->
     <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
     <script src="./js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/phplist.js"></script>
     <script src="./js/custom.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -65,8 +67,22 @@
       <div class="container">
         <div class="col-lg-12">
           <img class="img-responsive center-block" src="./img/logo.png" alt="presentation">
-          <h1>Contribute with your ideas, your skills or make donation to build powerfull application</h1>
+          <h1>Contribute with your ideas, your skills or make donation to build powerful application</h1>
           <p class="lead">Product software is an art, requires a high level of engineering skills and artistic imagination.<br> We believe in quality and community for a better user experience</p>
+          <h2 class="email-title">Stay informed !</h2>
+
+          <script type="text/javascript">
+            var pleaseEnter = "Please enter your email";
+            var thanksForSubscribing = '<div class="subscribed">Thanks for subscribing.</div>';
+            var waitImage = './img/ajax-loader.gif'
+          </script>
+          <div id="phplistsubscriberesult"></div>
+          <form action="https://kunzisoft.hosted.phplist.com/lists/?p=subscribe&id=1" method="post" id="phplistsubscribeform">
+            <label class="email" for="emailaddress"><i class="fa fa-envelope"></i></label>
+            <input type="text" name="email" value="" id="emailaddress" />
+            <button class="btn btn-default" type="submit" id="phplistsubscribe">Subscribe</button>
+          </form>
+
         </div>
       </div>
     </div>
@@ -95,7 +111,7 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <h3><i class="fa fa-users"></i> Everyone collaborates</h3>
-            <p>We create for <strong>usable, reusable, beautyfull and ergonomic softwares</strong>. Translation, documentation, marketing, all trades can add their competence to the building.</p>
+            <p>We create for <strong>usable, reusable, beautiful and ergonomic softwares</strong>. Translation, documentation, marketing, all trades can add their competence to the building.</p>
           </div>
           <div class="col-lg-4 col-sm-6">
             <h3><i class="fa fa-graduation-cap"></i> Learn and build</h3>
@@ -107,7 +123,7 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <h3><i class="fa fa-github"></i> Open Source</h3>
-            <p>Better to create an open source project, anyone can contribute, <strong>resolve bugs, add features and increase security.</strong></p>
+            <p>Better to create an open source project, anyone can contribute, <strong>resolve bugs, add features and increase security.</strong>And you can always sell it</p>
           </div>
         </div>
       </div>
