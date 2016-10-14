@@ -15,13 +15,8 @@ body>.navbar-transparent .navbar-nav>.open>a {
 input[type=text] {
     width: 60%;
     padding: 12px 20px;
-    margin: 0 20px 0 20px;
+    margin: 0 20px 0 0;
     box-sizing: border-box;
-}
-form .fa{
-    font-size: 30px;
-    padding-top: 10px;
-    color: #C5A2F9;
 }
 .email-title {
     color: #FFF;
@@ -113,14 +108,23 @@ footer p {
     margin: 3em;
 }
 .splash {
-    padding: 10em 0 2em;
+    padding: 10em 0 8em;
     background-image: url(../img/bg.jpg);
     background-color: #5b3c89;
     background-size: cover;
     background-attachment: fixed;
     background-position:center center;
     color: #fff;
-    text-align: center;
+}
+.splash h1 {
+    font-size: 45px;
+    color: #ffedd4;
+}
+.splash h2 {
+    font-size: 20px;
+}
+.splash .splash-form {
+  text-align: left;
 }
 .splash .logo {
     width: 160px;
@@ -147,28 +151,25 @@ footer p {
   padding: 0;
 }
 .section-ideas {
-  background-color: #383838;
-  background-image: url(../img/bg_idea.jpg);
+  background-color: #FCFCFC;
   background-size: cover;
-  color: #F5F5F5;
+  color: #BF3838;
 }
 .section-contribution {
   background-image: url(../img/bg_contribution.jpg);
   background-size: cover;
-  color: #202020;
+  color: #6B4A9C;
 }
 .section-donation {
-  background-image: url(../img/bg_donation.jpg);
   background-color: #6b4a9c;
   background-size: cover;
   color: #F5F5F5;
 }
 .section-love {
-  background-color: #6b4a9c;
-  background-image: url(../img/bg_love.jpg);
+  background-color: #fcfcfc;
   background-size: cover;
   background-position:center center;
-  color: #F5F5F5;
+  color: #6B4A9C;
 }
 .section-preview {
     padding: 4em 0 4em;
