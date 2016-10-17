@@ -84,7 +84,7 @@ input[type=text] {
     margin-bottom: 10px;
 }
 .description-content h3, .description-content .h3, .description-content .fa {
-    color: #6b4a9c
+    color: #7726BF;
 }
 .description-content p {
   min-height: 90px;
@@ -108,7 +108,7 @@ footer p {
     margin: 3em;
 }
 .splash {
-    padding: 10em 0 8em;
+    padding: 5em 0 5em;
     background-image: url(../img/bg.jpg);
     background-color: #5b3c89;
     background-size: cover;
@@ -161,7 +161,7 @@ footer p {
   color: #6B4A9C;
 }
 .section-donation {
-  background-color: #6b4a9c;
+  background-color: #5f3998;
   background-size: cover;
   color: #F5F5F5;
 }
