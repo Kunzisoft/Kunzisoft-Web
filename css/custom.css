@@ -35,6 +35,9 @@ input[type=text] {
     min-height: 300px;
     border-bottom: none;
 }
+.nav > li > form {
+    padding: 15px;
+}
 .navbar-default .navbar-nav > li > .external-link {
     color: #661fa5;
 }

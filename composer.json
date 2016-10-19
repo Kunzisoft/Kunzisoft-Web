@@ -1,0 +1,15 @@
+{
+    "name": "kunzisoft/kunzisoft-web",
+    "description": "Project for Kunzisoft Web",
+    "type": "project",
+    "require": {
+        "gettext/gettext": "^4.1"
+    },
+    "license": "Apache2",
+    "authors": [
+        {
+            "name": "J-Jamet",
+            "email": "jamet.jeremy@outlook.com"
+        }
+    ]
+}

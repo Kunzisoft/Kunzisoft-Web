@@ -6784,7 +6784,7 @@ button.close {
   border-color: white;
 }
 .btn {
-  border-width: 2px;
+  border-width: 1px;
 }
 .btn:active {
   -webkit-box-shadow: none;

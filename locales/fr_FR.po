@@ -1,0 +1,227 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-10-18 01:47+0200\n"
+"PO-Revision-Date: 2016-10-18 13:17+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SearchPath-0: index.php\n"
+
+#: Menu
+msgid "Submit features"
+msgstr "Soumettre des fonctionnalités"
+
+msgid "Contribute"
+msgstr "Contribuer"
+
+msgid "Donate"
+msgstr "Donner"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Contact"
+msgstr "Contact"
+
+
+#: Information
+msgid "Available Soon"
+msgstr "Bientôt disponible"
+
+msgid ""
+"Kunzisoft is currently under construction but you can already collaborate and "
+"submit your ideas."
+msgstr ""
+"Kunzisoft est actuellement en construction mais vous pouvez déjà collaborer "
+"et soumettre vos idées."
+
+
+#: Splash
+msgid "Collaborate to build your powerful software"
+msgstr "Collaborer pour créer votre puissant logiciel"
+
+msgid ""
+"We believe in quality and community for a better user experience."
+msgstr ""
+"Nous croyons en la qualité et en la communauté pour une meilleure expérience "
+"utilisateur."
+
+msgid "Stay informed !"
+msgstr "Rester informé!"
+
+msgid "Please enter your email"
+msgstr "Merci de renseigner votre email"
+
+msgid "Thanks for subscribing."
+msgstr "Merci pour votre souscription."
+
+msgid "Subscribe"
+msgstr "Souscrire"
+
+
+#: Description
+msgid "Launch your project"
+msgstr "Lancer votre projet"
+
+msgid ""
+"No money or no resource? Launch your project with a <strong>simple idea</"
+"strong>. You describe the concept and developpers are working to make it "
+"real."
+msgstr ""
+"Pas d'argent ou pas de ressource? Lancer votre projet avec une "
+"<strong>simple idée</strong>. Vous décrivez le concept et les développeurs "
+"travaillent pour le rendre réel."
+
+msgid "Donate for <i class=\"fa fa-heart\"></i>"
+msgstr "Donner par <i class=\"fa fa-heart\"></i>"
+
+msgid ""
+"Submit your idea and <strong>pay what you want</strong>. It's up to you to "
+"make donations to people working on your project or one that you love."
+msgstr ""
+"Soumetter votre idée et <strong>payer ce que vous voulez</strong>. C'est à "
+"vous de faire des donations aux personnes travaillant sur votre projet ou à "
+"l'un que vous aimez."
+
+msgid "Everyone collaborates"
+msgstr "Tout le monde collabore"
+
+msgid ""
+"We create <strong>functional, reusable, beautiful and ergonomic softwares</"
+"strong>. Translation, documentation, marketing, all trades can add their "
+"competence to the building."
+msgstr ""
+"Nous créons des <strong>logiciels fonctionnels, réutilisables, magnifiques et "
+"ergonomiques</strong>. Traduction, documentation, marketing, tous les métiers "
+"peuvent ajouter leurs compétences à l'édifice."
+
+msgid "Learn and teach"
+msgstr "Apprendre et enseigner"
+
+msgid ""
+"Want to teach, disseminate knowledge and experience? You're a developper, "
+"graphic artist, project manager... <strong>Upgrade your skills</strong> and "
+"learn best practices with professionals."
+msgstr ""
+"Envie d'enseigner, de disséminer des connaissances et de l'expériences? Vous êtes "
+"un développeur, un graphiste, un chef de projet... <strong>Augmentez vos "
+"compétences</strong> et apprenez les meilleures pratiques avec des "
+"professionnels."
+
+msgid "Manage with the best"
+msgstr "Manœuvrer avec les meilleurs"
+
+msgid ""
+"Another new tool for build your application? No. Community knows what are "
+"the best solution for your problem. <strong>We are not reinventing the "
+"wheel</strong>, we create with existing free and professionnal tools for the "
+"best quality."
+msgstr ""
+"Un autre nouvel outil pour créer vos applications? Non. La communauté sait "
+"quelles sont les meilleurs solutions pour votre problème. <strong>Nous ne "
+"réinventons pas la roue</strong>, nous créons avec les outils gratuits et "
+"professionnels existants pour la meilleure qualité."
+
+msgid "Open Source"
+msgstr "Open Source"
+
+msgid ""
+"Better to create an open source project, anyone can contribute, "
+"<strong>resolve bugs, add features and increase security.</strong> And of "
+"course, you can earn money and sell your project!"
+msgstr ""
+"Mieux vaut créer un projet Open Source, tout le monde peut contribuer, "
+"<strong>résoudre des bugs, ajouter des fonctionnalités et augmenter la "
+"sécurité.</strong> Et bien sûr, vous pouvez gagner de l'argent et vendre "
+"votre projet!"
+
+
+#: Ideas
+msgid "Submit ideas and features"
+msgstr "Soumettre des idées et des fonctionnalités"
+
+msgid ""
+"The idea is here, you want to create your application but you do not have "
+"the knowledge or resources required. Ask the community to create your own "
+"project : "
+msgstr ""
+"L'idée est là, vous voulez votre application mais vous n'avez pas les "
+"connaissances ou les ressources nécessaires. Solliciter la communauté pour "
+"créer votre propre projet : "
+
+
+#: Contribute
+msgid "Offer your services"
+msgstr "Proposez vos services"
+
+msgid ""
+"Product software is an art, requires a high level of engineering skills and "
+"artistic imagination.<br> You have many skills, want to upgrade your "
+"knowledge or resolve a little bug : "
+msgstr ""
+"Produire des logiciels est un art, requiert un au niveau de compétences "
+"ingénieurs et de l'imagination artistique.<br> Vous avez de nombreuses "
+"compétences, voulez augmenter vos connaissances ou résoudre un petit bug : "
+
+
+#: Donate
+msgid "Donate for love"
+msgstr "Donner par amour"
+
+msgid ""
+"Want to support your favorite software project, make a donation and become a "
+"kunzite : "
+msgstr ""
+"Vous voulez supporter votre projet favoris, faites une donation et devenez un "
+"kunzite : "
+
+msgid "Don't worry, It uses paypal and is totally secure"
+msgstr "Pas d'inquiétude, nous utilisons paypal et c'est totalement sécurisé"
+
+msgid "Donate (Coming soon)"
+msgstr "Donner (Bientôt disponible)"
+
+msgid "<strong>Kunzisoft</strong> project need donators"
+msgstr "Le projet <strong>Kunzisoft</strong> a besoin de donateurs"
+
+msgid "Goal : "
+msgstr "But : "
+
+
+#: Love
+msgid "We also love"
+msgstr "Nous aimons aussi"
+
+msgid "Mozilla"
+msgstr "Mozilla"
+
+msgid "Firefow web browser and Thunderbird email application"
+msgstr "Firefox navigateur internet et Thunderbird application email"
+
+msgid "Libre Office"
+msgstr "Libre Office"
+
+msgid "Office suite"
+msgstr "Office suite"
+
+msgid "Wikipedia"
+msgstr "Wikipedia"
+
+msgid "Free Encyclopedia"
+msgstr "Encyclopédie gratuite"
+
+msgid "Previous"
+msgstr "Précédent"
+
+msgid "Next"
+msgstr "Suivant"
+
+msgid "Copyright &copy; Kunzisoft 2016. All Rights Reserved"
+msgstr "Copyright &copy; Kunzisoft 2016. Tous Droits Réservés"
