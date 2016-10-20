@@ -34,7 +34,7 @@ $(document).ready(function() {
 
 		var splitPageName = pageName.split(".");
 		var extension = splitPageName[splitPageName.length -1];
-		if(extension || extension.length === 0)
+		if(!extension || extension.length === 0)
 			extension = "html";
 		// Remove extension from splitPageName
 		splitPageName.pop();
@@ -42,7 +42,7 @@ $(document).ready(function() {
 		splitPageName = splitPageName.toString().split("_");
 		if(splitPageName.length > 1)
 			splitPageName.pop();
-		if(splitPageName || splitPageName.length === 0)
+		if(!splitPageName || splitPageName.length === 0)
 			splitPageName = "index";
 		// For page in PHP
 		if(extension.toLowerCase() === "php") {
