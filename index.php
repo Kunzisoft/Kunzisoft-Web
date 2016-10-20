@@ -149,7 +149,7 @@
             <p><?=_("We create <strong>functional, reusable, beautiful and ergonomic softwares</strong>. Translation, documentation, marketing, all trades can add their competence to the building.");?></p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <h3><i class="fa fa-graduation-cap"></i> <?=_("Learn and build");?></h3>
+            <h3><i class="fa fa-graduation-cap"></i> <?=_("Learn and teach");?></h3>
              <p><?=_("Want to teach, disseminate knowledge and experience? You're a developper, graphic artist, project manager... <strong>Upgrade your skills</strong> and learn best practices with professionals.");?></p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
