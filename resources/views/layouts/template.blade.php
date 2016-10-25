@@ -31,7 +31,9 @@
   <body id="page-top" class="index">
     @include('layouts.partials._navigation')
     @include('layouts.partials._header')
+
     @yield('content')
+    
     @include('layouts.partials._footer')
 
     <!-- Placed at the end of the document so the pages load faster -->

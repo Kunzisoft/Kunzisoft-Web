@@ -29,6 +29,15 @@
                     <li>
                         <a class="external-link" href="mailto:contact@kunzisoft.com">Contact</a>
                     </li>
+
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Fr <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Fr</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">En</a></li>
+                      </ul>
+                    </li>
                     <li>
                       <form action="#">
                         <select name="menu_language" id="menu_language">

@@ -7,23 +7,25 @@
 @section('content')
       <div id="tophome" class="splash">
         <div class="container">
-          <div class="col-lg-6">
-            <img class="img-responsive center-block" src="./img/logo.png" alt="presentation">
-            <h1>Collaborate to build your powerful software</h1>
-            <p class="lead">We believe in quality and community for a better user experience.</p>
-          </div>
-          <div class="col-lg-8 splash-form">
-            <h2 class="email-title">Stay informed !</h2>
-            <script type="text/javascript">
-              var pleaseEnter = "Please enter your email";
-              var thanksForSubscribing = '<div class="subscribed">Thanks for subscribing.</div>';
-              var waitImage = './img/ajax-loader.gif'
-            </script>
-            <div id="phplistsubscriberesult"></div>
-            <form action="https://kunzisoft.hosted.phplist.com/lists/?p=subscribe&amp;id=1" method="post" id="phplistsubscribeform">
-              <input type="text" name="email" value="" id="emailaddress" />
-              <button class="btn btn-default" type="submit" id="phplistsubscribe">Subscribe</button>
-            </form>
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="img-responsive center-block" src="./img/logo.png" alt="presentation">
+              <h1>Collaborate to build your powerful software</h1>
+              <p class="lead">We believe in quality and community for a better user experience.</p>
+            </div>
+            <div class="col-lg-8 splash-form">
+              <h2 class="email-title">Stay informed !</h2>
+              <script type="text/javascript">
+                var pleaseEnter = "Please enter your email";
+                var thanksForSubscribing = '<div class="subscribed">Thanks for subscribing.</div>';
+                var waitImage = './img/ajax-loader.gif'
+              </script>
+              <div id="phplistsubscriberesult"></div>
+              <form action="https://kunzisoft.hosted.phplist.com/lists/?p=subscribe&amp;id=1" method="post" id="phplistsubscribeform">
+                <input type="text" name="email" value="" id="emailaddress" />
+                <button class="btn btn-default" type="submit" id="phplistsubscribe">Subscribe</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -197,7 +199,7 @@
                   <span class="sr-only">Next</span>
                 </a>
               </div>
-              
+
         </div>
       </div>
 @endsection
