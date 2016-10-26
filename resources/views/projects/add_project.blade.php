@@ -21,7 +21,6 @@
         <div class="col-lg-8">
             {!! BootForm::text('Project Name', 'name') !!}
             {!! BootForm::textarea('Description', 'description') !!}
-            {!! BootForm::submit('Submit') !!}
         </div>
 
         <div class="col-lg-4">
@@ -33,6 +32,10 @@
               {!! BootForm::inputGroup('Github', 'github')->beforeAddon('<i class="fa fa-github"></i>') !!}
             </div>
           </div>
+        </div>
+
+        <div class="col-lg-8">
+          {!! BootForm::submit('Submit') !!}
         </div>
         {!! BootForm::close() !!}
       </div>
