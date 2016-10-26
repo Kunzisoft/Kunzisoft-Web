@@ -86,8 +86,23 @@ input[type=text] {
 .progress {
     margin-bottom: 10px;
 }
-.description-content h3, .description-content .h3, .description-content .fa {
-    color: #7726BF;
+.description-content {
+  /*! background-color: #fffbf5; */
+}
+.description-content .description-icon {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 35px;
+  margin-bottom: 10px;
+  background: url(../img/bg_description_icon.jpg);
+  color: #ffedd4;
+  font-size: 32px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.description-content h3, .description-content .h3 {
+    color: #582289;
 }
 .description-content p {
   min-height: 90px;
@@ -115,7 +130,6 @@ footer p {
     background-image: url(../img/bg.jpg);
     background-color: #5b3c89;
     background-size: cover;
-    background-attachment: fixed;
     background-position:center center;
     color: #fff;
 }
@@ -124,7 +138,8 @@ footer p {
     color: #ffedd4;
 }
 .splash h2 {
-    font-size: 20px;
+    font-size: 26px;
+    margin-top: 60px;
 }
 .splash .splash-form {
   text-align: left;
@@ -154,17 +169,17 @@ footer p {
   padding: 0;
 }
 .section-ideas {
-  background-color: #FCFCFC;
+  background-color: #FFF;
   background-size: cover;
-  color: #BF3838;
+  color: #CB5555;
 }
 .section-contribution {
-  background-image: url(../img/bg_contribution.jpg);
+  background-color: #F2F2F2;
   background-size: cover;
   color: #6B4A9C;
 }
 .section-donation {
-  background-color: #5f3998;
+  background-color: #743998;
   background-size: cover;
   color: #F5F5F5;
 }

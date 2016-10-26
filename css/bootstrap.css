@@ -1269,7 +1269,7 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 39px;
+  font-size: 28px;
 }
 h2,
 .h2 {
@@ -1302,7 +1302,7 @@ p {
 }
 @media (min-width: 768px) {
   .lead {
-    font-size: 22.5px;
+    font-size: 20px;
   }
 }
 small,
