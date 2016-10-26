@@ -18,6 +18,9 @@ input[type=text] {
     margin: 0 20px 0 0;
     box-sizing: border-box;
 }
+form, .form-group, form div, form label, form input, form button {
+    text-align: left;
+}
 .email-title {
     color: #FFF;
 }
@@ -158,6 +161,9 @@ footer p {
   background-size: cover;
   color: #BF3838;
 }
+.section-project {
+  background-size: cover;
+}
 .section-contribution {
   background-image: url(../img/bg_contribution.jpg);
   background-size: cover;
@@ -209,6 +215,9 @@ footer p {
 .section-preview .lead {
     margin-bottom: 2em;
 }
+.subhead {
+    border-bottom: 1px solid #dedede;
+}
 @media (max-width:767px) {
     .section-preview .image img {
     width: 100%}
@@ -236,6 +245,9 @@ footer p {
 }
 .splash h1 {
     font-size: 2em;
+}
+.panel-title h1, .panel-title h2, .panel-title h3, .panel-title h4, .panel-title h5 {
+    text-align: left;
 }
 #banner {
     margin-bottom: 2em;

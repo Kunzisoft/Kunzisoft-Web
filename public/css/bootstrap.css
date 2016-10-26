@@ -52,7 +52,6 @@ template {
 }
 a {
   background-color: transparent;
-  text-shadow: 0 0 2px #868686;
 }
 a:active,
 a:hover {
@@ -1090,8 +1089,8 @@ body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.42857143;
-  color: #2c3e50;
-  background-color: #EFEFEF;
+  color: #4E4E4E;
+  background-color: #F3F3F3;
 }
 input,
 button,
@@ -2329,7 +2328,7 @@ th {
   background-color: #f9f9f9;
 }
 .table-hover > tbody > tr:hover {
-  background-color: #ddd;
+  background-color: #eee;
 }
 table col[class*="col-"] {
   position: static;
@@ -2361,7 +2360,7 @@ table th[class*="col-"] {
 .table-hover > tbody > tr.active:hover > td,
 .table-hover > tbody > tr:hover > .active,
 .table-hover > tbody > tr.active:hover > th {
-  background-color: #393838;
+  background-color: #c6c6c6;
 }
 .table > thead > tr > td.success,
 .table > tbody > tr > td.success,
@@ -3571,7 +3570,7 @@ tbody.collapse.in {
 .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #ffffff;
-  background-color: #61377f;
+  background-color: #8455a5;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -4502,8 +4501,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f3f3f3;
-  border-color: #6B4A9C;
+  background-color: #f8f8f8;
+  border-color: #BFA7E3;
 }
 .navbar-default .navbar-brand {
   color: #ffffff;
@@ -5482,8 +5481,10 @@ button.list-group-item-danger.active:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 17px;
-  color: inherit;
+  font-size: 16px;
+  color: #8e62bc;
+  text-align: left;
+  font-weight: bold;
 }
 .panel-title > a,
 .panel-title > small,
@@ -5695,7 +5696,7 @@ button.list-group-item-danger.active:focus {
   border-bottom: 1px solid #464545;
 }
 .panel-default {
-  /*! border-color: #ecf0f1; */
+  border-color: #e6e6e6;
 }
 .panel-default > .panel-heading {
   color: #2c3e50;
@@ -6893,9 +6894,9 @@ textarea {
 .form-control,
 input,
 textarea {
-  border: 2px hidden transparent;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  border: 1px solid #d8d8d8;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 .form-control:focus,
 input:focus,
