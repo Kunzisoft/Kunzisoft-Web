@@ -19,20 +19,14 @@
       <div class="row">
         {!! BootForm::open() !!}
         <div class="col-lg-8">
-          <div class="btn-group" role="group" aria-label="...">
-            <button type="button" class="btn btn-default">
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
-            </button>
-            <button type="button" class="btn btn-default">
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
-            </button>
+          <div class="well">
+              {!! BootForm::text('Project Name', 'name') !!}
+              {!! BootForm::textarea('Description', 'description') !!}
+              {!! BootForm::text('Required skills', 'skills') !!}
+              {!! BootForm::text('Tags, Keywords', 'keywords') !!}
+              {!! BootForm::text('Link Projects', 'linkProjects') !!}
+              {!! BootForm::text('Collaborators', 'collaborators') !!}
           </div>
-            {!! BootForm::text('Project Name', 'name') !!}
-            {!! BootForm::textarea('Description', 'description') !!}
-            {!! BootForm::text('Required skills', 'skills') !!}
-            {!! BootForm::text('Tags, Keywords', 'keywords') !!}
-            {!! BootForm::text('Link Projects', 'linkProjects') !!}
-            {!! BootForm::text('Collaborators', 'collaborators') !!}
         </div>
 
         <div class="col-lg-4">
@@ -47,7 +41,7 @@
         </div>
 
         <div class="col-lg-8">
-          {!! BootForm::submit('Submit') !!}
+          {!! BootForm::submit('Submit', 'btn-success') !!}
         </div>
         {!! BootForm::close() !!}
       </div>

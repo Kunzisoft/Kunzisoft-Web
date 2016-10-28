@@ -89,11 +89,11 @@ form, .form-group, form div, form label, form input, form button {
 .progress {
     margin-bottom: 10px;
 }
-.description-content h3, .description-content .h3, .description-content .fa {
+.description-content h1, .description-content h2, .description-content h3, .description-content h4, .description-content h5, .description-content .fa {
     color: #7726BF;
 }
 .description-content p {
-  min-height: 90px;
+    min-height: 90px;
 }
 footer {
     margin: 5em 0;
@@ -268,4 +268,7 @@ footer p {
     margin-bottom: 2em;
     text-align: center;
 }
+}
+.col-content-center {
+    text-align: center;
 }

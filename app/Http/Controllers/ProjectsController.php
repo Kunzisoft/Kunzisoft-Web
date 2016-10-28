@@ -15,4 +15,8 @@ class ProjectsController extends Controller
     public function addProject() {
       return view('projects.add_project');
     }
+
+    public function project() {
+      return view('projects.project');
+    }
 }
