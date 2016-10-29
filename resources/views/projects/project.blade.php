@@ -44,9 +44,9 @@
             <li class="active"><a href="#home" data-toggle="tab">Description</a></li>
             <li><a href="#home" data-toggle="tab">Content</a></li>
             <li><a href="#home" data-toggle="tab">Documentation</a></li>
-            <li><a href="#home" data-toggle="tab">Contributors <span class="badge">5</span></a></li>
+            <li class="disabled"><a>Gantt</a></li>
             <li><a>TODO <span class="badge">3</span></a></li>
-            <li class="disabled"><a>Planning</a></li>
+            <li><a href="#home" data-toggle="tab">Contributors <span class="badge">5</span></a></li>
           </ul>
           <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade active in" id="home">

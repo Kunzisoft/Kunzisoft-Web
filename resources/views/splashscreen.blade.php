@@ -1,4 +1,4 @@
-@extends('layouts.template')
+@extends('layouts.landing_page')
 
 @section('title')
   Kunzisoft
