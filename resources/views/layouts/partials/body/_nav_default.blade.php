@@ -38,7 +38,7 @@
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-plus"></span></a>
                       <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">New Project</a></li>
+                        <li><a href="{{ route('project.create') }}">New Project</a></li>
                         <li><a href="#">New Team</a></li>
                         <li class="divider"></li>
                         <li><a href="#">New Donation</a></li>

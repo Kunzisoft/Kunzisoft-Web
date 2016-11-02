@@ -8,7 +8,6 @@
   <div class="section">
     <div class="container">
       <div class="row">
-
         <div class="col-lg-8">
           <div class="panel panel-default">
             <div class="panel-heading">
@@ -21,6 +20,7 @@
                   <th>Name</th>
                   <th>Description</th>
                   <th>Contributors</th>
+                  <th>Actions</th>
                 </tr>
               </thead>
               <tbody>
@@ -36,24 +36,23 @@
                   <td>Kunzisoft Web</td>
                   <td>Me, Polau, Garfield</td>
                 </tr>
-                <tr>
-                  <td>**</td>
-                  <td>Kunzisoft</td>
-                  <td>Kunzisoft Web</td>
-                  <td>Me, Polau, Garfield</td>
-                </tr>
-                <tr>
-                  <td>**</td>
-                  <td>Kunzisoft</td>
-                  <td>Kunzisoft Web</td>
-                  <td>Me, Polau, Garfield</td>
-                </tr>
-                <tr>
-                  <td>**</td>
-                  <td>Kunzisoft</td>
-                  <td>Kunzisoft Web</td>
-                  <td>Me, Polau, Garfield</td>
-                </tr>
+                @foreach($nerds as $key => $value)
+                    <tr>
+                        <td>{{ $value->id }}</td>
+                        <td>{{ $value->name }}</td>
+                        <td>{{ $value->description }}</td>
+                        <td>{{ $value->popularity }}</td>
+                        <td>
+                            <!-- show -->
+                            <a class="btn btn-small btn-success" href="{{ URL::to('projects/' . $value->id) }}">Show</a>
+
+                            <!-- edit -->
+                            <a class="btn btn-small btn-info" href="{{ URL::to('projects/' . $value->id . '/edit') }}">Edit</a>
+
+                            <!-- delete -->
+                        </td>
+                    </tr>
+                @endforeach
               </tbody>
             </table>
           </div>

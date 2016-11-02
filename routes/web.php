@@ -16,8 +16,6 @@ Route::get('/', function () {
 });
 
 /**
-* Route for projects
+* Route for project
 **/
-Route::get('projects', 'ProjectsController@listAll');
-Route::get('project', 'ProjectsController@project');
-Route::get('addproject', 'ProjectsController@addProject');
+Route::resource('project', 'ProjectController');
