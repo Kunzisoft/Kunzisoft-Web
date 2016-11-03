@@ -19,18 +19,19 @@
             <div class="panel-heading">
               <h3 class="panel-title">Projects that needs help</h3>
             </div>
-            <table class="table table-bordered table-striped table-hover">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Description</th>
-                  <th>Contributors</th>
-                  <th>Popularity</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                @foreach($projectsList as $key => $value)
+            @if (!($projectsList->isEmpty()))
+              <table class="table table-bordered table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Contributors</th>
+                    <th>Popularity</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @foreach($projectsList as $key => $value)
                     <tr>
                         <td>{{ $value->name }}</td>
                         <td>{{ $value->description }}</td>
@@ -40,9 +41,16 @@
                             <a class="btn btn-sm btn-primary" href="{{ URL::to('project/' . $value->id) }}"><span class="glyphicon glyphicon-tasks"></a>
                         </td>
                     </tr>
-                @endforeach
+                  @endforeach
               </tbody>
             </table>
+          @else
+            <div class="jumbotron">
+              <h1>Ho! No project. </h1>
+              <p>Create a new project is easy, a simple idea is needed.</p>
+              <p><a class="btn btn-primary btn-lg" href="{{ route('project.create') }}" role="button">New Project</a></p>
+            </div>
+          @endif
           </div>
         </div>
 
@@ -85,7 +93,7 @@
             <tbody>
               <tr>
                 <td>Kunzisoft</td>
-                <td><input type="hidden" class="rating" data-filled="glyphicon glyphicon-heart" data-empty="glyphicon glyphicon-heart-empty" data-fractions="2" value="{{ $value->popularity/20 }}" data-readonly />&ensp;<span class="badge">3</span></td>
+                <td><input type="hidden" class="rating" data-filled="glyphicon glyphicon-heart" data-empty="glyphicon glyphicon-heart-empty" data-fractions="2" value=3 data-readonly />&ensp;<span class="badge">3</span></td>
               </tr>
             </tbody>
           </table>

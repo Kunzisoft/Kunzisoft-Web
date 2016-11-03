@@ -98,6 +98,12 @@ form, .form-group, form div, form label, form input, form button {
 .description-content p {
     min-height: 90px;
 }
+.list-group-item .progress {
+    width: 100px;
+    display:inline;
+    float:right;
+    margin-right: 10px;
+}
 footer {
     margin: 5em 0;
 }

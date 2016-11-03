@@ -58,4 +58,44 @@ $(document).ready(function() {
 			window.open(targetPage, "_self");
 		}
 	});
+
+	//TODO Tree
+	function getTree() {
+		var tree = [
+		  {
+		    text: "Créer une application de gestion de projets pour logiciels libres",
+				tags: ['available', "ok"],
+		    nodes: [
+		      {
+		        text: "Gérer les fonctionnalités et les idées",
+		        nodes: [
+		          {
+		            text: "Ajouter une idée"
+		          },
+		          {
+		            text: "Grandchild 2"
+		          }
+		        ]
+		      },
+		      {
+		        text: "Contribuer avec des compétences diverses"
+		      },
+					{
+		        text: "Donner pour faire vivre les projets"
+		      }
+		    ]
+		  }
+		];
+	  return tree;
+	}
+
+	$('#tree').treeview({
+		data: getTree(),
+		showTags: true,
+		expandIcon: 'glyphicon glyphicon-indent-left',
+		collapseIcon: 'glyphicon glyphicon-indent-right',
+		levels: 5,
+		highlightSelected: false,
+	});
+
 });
