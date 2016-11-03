@@ -1228,7 +1228,6 @@ h3,
 .h3 {
   margin-top: 21px;
   margin-bottom: 10.5px;
-  color: #926fb9;
 }
 h1 small,
 .h1 small,
@@ -2281,7 +2280,7 @@ th {
 .table > tfoot > tr > td {
   padding: 8px;
   line-height: 1.42857143;
-  vertical-align: top;
+  vertical-align: middle;
   border-top: 1px solid #464545;
 }
 .table > thead > tr > th {
@@ -4947,6 +4946,7 @@ a.label:focus {
 .btn .badge {
   position: relative;
   top: -1px;
+  padding: 2px 4px;
 }
 .btn-xs .badge,
 .btn-group-xs > .btn .badge {
@@ -5489,7 +5489,6 @@ button.list-group-item-danger.active:focus {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
-  color: #8e62bc;
   text-align: left;
   font-weight: bold;
 }
@@ -5706,7 +5705,7 @@ button.list-group-item-danger.active:focus {
   border-color: #e6e6e6;
 }
 .panel-default > .panel-heading {
-  color: #2c3e50;
+  color: #8656c2;
   background-color: #f8f8f8;
   border-color: #f8f8f8;
 }

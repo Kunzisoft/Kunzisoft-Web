@@ -21,7 +21,7 @@
           <div class="col-lg-8">
             <div class="well">
                 {!! BootForm::text('Project Name', 'name')->placeholder('My Project'); !!}
-                {!! BootForm::textarea('Description', 'description') !!}
+                {!! BootForm::textarea('Description', 'description')->rows('2')->cols('10') !!}
                 {!! BootForm::text('Required skills', 'skills') !!}
                 {!! BootForm::text('Tags, Keywords', 'keywords') !!}
                 {!! BootForm::text('Link Projects', 'linkProjects') !!}
@@ -39,7 +39,7 @@
             </div>
           </div>
           <div class="col-lg-8">
-            {!! BootForm::submit('Submit', 'btn-success') !!}
+            {!! BootForm::submit('Save', 'btn-success') !!}
           </div>
         {!! BootForm::close() !!}
       </div>

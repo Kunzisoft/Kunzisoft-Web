@@ -21,6 +21,9 @@ input[type=text] {
 form, .form-group, form div, form label, form input, form button {
     text-align: left;
 }
+.td-rating {
+    min-width: 92px;
+}
 .email-title {
     color: #FFF;
 }
@@ -232,6 +235,10 @@ footer p {
 }
 .subhead {
     border-bottom: 1px solid #dedede;
+}
+.subhead h1, .subhead h2, .subhead h3, .subhead h4, .subhead h5 {
+    margin: 8px;
+    color: #8d5bcb;
 }
 @media (max-width:767px) {
     .section-preview .image img {

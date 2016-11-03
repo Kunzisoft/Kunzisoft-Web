@@ -10,28 +10,32 @@
 
     <ul class="breadcrumb">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Library</a></li>
-      <li class="active">Data</li>
+      <li><a href="{{route('project.index')}}">Projects</a></li>
+      <li class="active">{{ $project->name }}</li>
     </ul>
 
     <div class="subhead">
       <div class="pull-left">
-          <h2 class="subhead-heading">Project Name</h2>
+          <h2 class="subhead-heading">{{ $project->name }}&emsp;<small><input type="hidden" class="rating" data-fractions="2" value="{{ $project->popularity/20 }}" /></small></h2>
       </div>
       <div class="pull-right">
-        <div class="btn-group pull-right dropdown-notifications sw-open">
-          <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-            Last change
-            <span class="badge">3</span>
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-right">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#"><i class="fa fa-th"></i> View all changes</a></li>
-          </ul>
+
+        <div class="btn-group pull-right" role="group">
+          <div class="btn-group dropdown-notifications sw-open">
+            <a href="#" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+              Last change
+              <span class="badge">3</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="fa fa-th"></i> View all changes</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-sm btn-default" href="{{ URL::to('project/' . $project->id . '/edit') }}"><span class="glyphicon glyphicon-cog"></span></a>
         </div>
       </div>
       <div class="clearfix"></div>
@@ -42,20 +46,22 @@
         <div class="well">
           <ul class="nav nav-tabs">
             <li class="active"><a href="#home" data-toggle="tab">Description</a></li>
-            <li><a href="#home" data-toggle="tab">Content</a></li>
-            <li><a href="#home" data-toggle="tab">Documentation</a></li>
+            <li><a href="#home" data-toggle="tab">Tender Spec</a></li>
             <li class="disabled"><a>Gantt</a></li>
+            <li><a href="#home" data-toggle="tab">Code</a></li>
+            <li><a href="#home" data-toggle="tab">Documentation</a></li>
             <li><a>TODO <span class="badge">3</span></a></li>
             <li><a href="#home" data-toggle="tab">Contributors <span class="badge">5</span></a></li>
           </ul>
+
           <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade active in" id="home">
               <div class="alert alert-dismissible alert-warning">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                 <h4>Warning!</h4>
-                <p>Best check yo self, you're not looking too good.</p>
+                <p>Best to link project with git manager. <a class="btn btn-sm btn-primary" href="{{ URL::to('project/') }}">Link Git</a></p>
               </div>
-              <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+              <p>{{ $project->description }}</p>
             </div>
             <div class="tab-pane fade" id="profile">
               <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>

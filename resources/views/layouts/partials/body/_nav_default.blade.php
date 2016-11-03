@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="scrollTo" href="#tophome"><img class="navbar-brand topnav" src="./img/logotype.png" alt="logotype" /></a>
+                <a class="scrollTo" href="#tophome"><img class="navbar-brand topnav" src="{{ asset('img/logotype.png') }}" alt="logotype" /></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -18,7 +18,7 @@
                         <a class="external-link" href="https://kunzisoft.blogspot.com/">Blog</a>
                     </li>
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">TODO <span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">TODO&ensp;<span class="caret"></span></a>
                       <ul class="dropdown-menu" role="menu">
                         <li><a href="#">Kunzisoft</a></li>
                         <li class="divider"></li>
@@ -27,7 +27,7 @@
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Projects <span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Projects&ensp;<span class="caret"></span></a>
                       <ul class="dropdown-menu" role="menu">
                         <li><a href="#">Kunzisoft</a></li>
                         <li class="divider"></li>

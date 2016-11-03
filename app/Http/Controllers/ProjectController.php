@@ -33,7 +33,7 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        return view('projects.add_project');
+        return view('projects.create');
     }
 
     /**
@@ -46,8 +46,8 @@ class ProjectController extends Controller
     {
 
       $rules = array(
-        'name' => 'required|min:1|max:20|alpha',
-        'description' => 'required',
+        'name' => 'required|min:1|max:20|alpha_num',
+        'description' => 'required|max:250',
       );
       $validator = Validator::make($request->all(), $rules);
 
@@ -58,13 +58,11 @@ class ProjectController extends Controller
               ->withInput(Input::except('password'));
       } else {
           // store
-          /*
-          $nerd = new Nerd;
-          $nerd->name       = Input::get('name');
-          $nerd->email      = Input::get('email');
-          $nerd->nerd_level = Input::get('nerd_level');
-          $nerd->save();
-          */
+          $projectToSave = new Project;
+          $projectToSave->name = Input::get('name');
+          $projectToSave->description = Input::get('description');
+          $projectToSave->popularity = 50; // 50% at start
+          $projectToSave->save();
           return Redirect::to('project');
       }
     }
@@ -77,7 +75,10 @@ class ProjectController extends Controller
      */
     public function show($id)
     {
-        return view('projects.details_project');
+        // get the project
+        $projectGet = Project::find($id);
+        // show the view and pass the project to it
+        return view('projects.details')->with('project', $projectGet);
     }
 
     /**
@@ -88,7 +89,10 @@ class ProjectController extends Controller
      */
     public function edit($id)
     {
-        //
+        // get the project
+        $projectGet = Project::find($id);
+        // show the edit form and pass the nerd
+        return view('projects.edit')->with('project', $projectGet);
     }
 
     /**
@@ -100,7 +104,28 @@ class ProjectController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // validate
+        // read more on validation at http://laravel.com/docs/validation
+        $rules = array(
+            'name' => 'required', //TODO validation
+            'description' => 'required'
+        );
+        $validator = Validator::make(Input::all(), $rules);
+
+        // process the login
+        if ($validator->fails()) {
+            return Redirect::to('project/' . $id . '/edit')
+                ->withErrors($validator)
+                ->withInput(Input::except('password'));
+        } else {
+            // store
+            $projectToUpdate = Project::find($id);
+            $projectToUpdate->name = Input::get('name');
+            $projectToUpdate->description = Input::get('description');
+            $projectToUpdate->save();
+
+            return Redirect::to('project/' . $id);
+        }
     }
 
     /**
@@ -111,6 +136,12 @@ class ProjectController extends Controller
      */
     public function destroy($id)
     {
-        //
+      // delete
+      $projectToDelete = Project::find($id);
+      $projectToDelete->delete();
+
+      // redirect
+      //Session::flash('message', 'Successfully deleted the project!');
+      return Redirect::to('project');
     }
 }

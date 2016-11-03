@@ -7,6 +7,12 @@
 @section('content')
   <div class="section">
     <div class="container">
+
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="{{route('project.index')}}">Projects</a></li>
+      </ul>
+
       <div class="row">
         <div class="col-lg-8">
           <div class="panel panel-default">
@@ -16,40 +22,22 @@
             <table class="table table-bordered table-striped table-hover">
               <thead>
                 <tr>
-                  <th>Popularity</th>
                   <th>Name</th>
                   <th>Description</th>
                   <th>Contributors</th>
+                  <th>Popularity</th>
                   <th>Actions</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>****</td>
-                  <td>Kunzisoft</td>
-                  <td>Kunzisoft Web</td>
-                  <td>Me, Polau, Garfield <span class="badge">3</span></td>
-                </tr>
-                <tr>
-                  <td>***</td>
-                  <td>Kunzisoft</td>
-                  <td>Kunzisoft Web</td>
-                  <td>Me, Polau, Garfield</td>
-                </tr>
-                @foreach($nerds as $key => $value)
+                @foreach($projectsList as $key => $value)
                     <tr>
-                        <td>{{ $value->id }}</td>
                         <td>{{ $value->name }}</td>
                         <td>{{ $value->description }}</td>
-                        <td>{{ $value->popularity }}</td>
-                        <td>
-                            <!-- show -->
-                            <a class="btn btn-small btn-success" href="{{ URL::to('projects/' . $value->id) }}">Show</a>
-
-                            <!-- edit -->
-                            <a class="btn btn-small btn-info" href="{{ URL::to('projects/' . $value->id . '/edit') }}">Edit</a>
-
-                            <!-- delete -->
+                        <td>Me, Polau, Garfield <span class="badge">3</span></td>
+                        <td class="td-rating"><input type="hidden" class="rating" data-fractions="2" value="{{ $value->popularity/20 }}" data-readonly /></td>
+                        <td class="text-center">
+                            <a class="btn btn-sm btn-primary" href="{{ URL::to('project/' . $value->id) }}"><span class="glyphicon glyphicon-tasks"></a>
                         </td>
                     </tr>
                 @endforeach
@@ -97,7 +85,7 @@
             <tbody>
               <tr>
                 <td>Kunzisoft</td>
-                <td>**** <span class="badge">3</span></td>
+                <td><input type="hidden" class="rating" data-filled="glyphicon glyphicon-heart" data-empty="glyphicon glyphicon-heart-empty" data-fractions="2" value="{{ $value->popularity/20 }}" data-readonly />&ensp;<span class="badge">3</span></td>
               </tr>
             </tbody>
           </table>
