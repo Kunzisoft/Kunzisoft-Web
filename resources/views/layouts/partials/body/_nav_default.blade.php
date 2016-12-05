@@ -49,10 +49,22 @@
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a>
                       <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">My Profile</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">Log out</a></li>
+                        @if (Auth::guest())
+                            <li><a href="{{ url('/login') }}">Login</a></li>
+                            <li><a href="{{ url('/register') }}">Register</a></li>
+                        @else
+                          <li><a href="#">{{ Auth::user()->name }} <span class="caret"></span></a></li>
+                          <li>
+                              <a href="{{ url('/logout') }}"
+                                  onclick="event.preventDefault();
+                                           document.getElementById('logout-form').submit();">
+                                  Logout
+                              </a>
+                              <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                  {{ csrf_field() }}
+                              </form>
+                          </li>
+                        @endif
                       </ul>
                     </li>
                 </ul>

@@ -1,6 +1,9 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSRF Token -->
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <meta name="description" content="">
 <meta name="author" content="">
@@ -15,9 +18,16 @@
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <link href="{{ asset('css/ie10-viewport-bug-workaround.css') }}" rel="stylesheet">
 
-<!-- Latest compiled and minified JavaScript -->
+<!-- Scripts -->
+<!-- Langage -->
 <script>var defaultLanguage = "en"</script>
 <script>var currentLanguage = "en"</script>
+<!-- Authentication -->
+<script>
+    window.Laravel = <?php echo json_encode([
+        'csrfToken' => csrf_token(),
+    ]); ?>
+</script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>

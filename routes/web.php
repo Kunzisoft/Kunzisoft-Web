@@ -19,3 +19,7 @@ Route::get('/', function () {
 * Route for project
 **/
 Route::resource('project', 'ProjectController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

@@ -5,7 +5,6 @@
   </head>
   <body id="page-top" class="index">
     @include('layouts.partials.body._nav_default')
-    @include('layouts.partials.body._header')
 
     @yield('content')
 

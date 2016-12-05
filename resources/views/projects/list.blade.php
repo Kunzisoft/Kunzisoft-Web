@@ -19,7 +19,7 @@
             <div class="panel-heading">
               <h3 class="panel-title">Projects that needs help</h3>
             </div>
-            @if (!($projectsList->isEmpty()))
+            @if (isset($projectsList) && !($projectsList->isEmpty()))
               <table class="table table-bordered table-striped table-hover">
                 <thead>
                   <tr>
@@ -38,7 +38,7 @@
                         <td>Me, Polau, Garfield <span class="badge">3</span></td>
                         <td class="td-rating"><input type="hidden" class="rating" data-fractions="2" value="{{ $value->popularity/20 }}" data-readonly /></td>
                         <td class="text-center">
-                            <a class="btn btn-sm btn-primary" href="{{ URL::to('project/' . $value->id) }}"><span class="glyphicon glyphicon-tasks"></a>
+                            <a class="btn btn-sm btn-primary" href="{{ URL::to('project/' . $value->id) }}"><span class="glyphicon glyphicon-tasks"></span></a>
                         </td>
                     </tr>
                   @endforeach
